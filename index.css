@@ -8,15 +8,13 @@ body
      -moz-background-size: cover;
      -o-background-size: cover;
      background-size: cover;
-     overflow-x: hidden;
-     min-width: 700px;
+/*     overflow-x: hidden;*/
 
 }
 
 .nova-logo
 {
     margin: auto;
-    transform: scale(.8);
 }
 
 .logoContainer
@@ -29,7 +27,7 @@ body
     margin-bottom: 75px;
     position: absolute;
     padding-left: 1vw;
-    /*background:  red;*/
+    background:  red;
 }
 
 [type="button"]
@@ -53,6 +51,11 @@ body
     color: white;
     text-decoration: none;
     text-shadow: 1px 1.5px black;
+}
+
+[type="button"]:hover
+{
+    cursor: pointer;
 }
 
 .buttonContainer
