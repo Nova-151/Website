@@ -18,9 +18,10 @@ body
 
 .logoContainer
 {
+    padding-top:  100px;
     text-align: center;
-    /*margin-bottom: 75px;*/
-    outline:  5px solid yellow;
+    margin-bottom: 75px;
+/*    outline:  5px solid yellow;*/
 
 }
 
@@ -30,13 +31,13 @@ body
     border:  3px solid #9900cc;
     width: 30vw;
     padding:  15px 10px;
-    margin: auto;
     font-weight: bold;
     font-family: Ubuntu;
     position: static;
-    /*margin:  0px 15vw;*/
+    margin:  0px 15vw;
     box-shadow: inset 4px -4px 22px  #ffcc80, inset -4px 4px 12px #e6e600, 3px 3px 12px #600080, 0px 0px 35px 6px white;
     border-radius: 5px;
+
 }
 
 [type="button"] a
@@ -45,6 +46,7 @@ body
     color: white;
     text-decoration: none;
     text-shadow: 1px 1.5px black;
+
 }
 
 [type="button"]:hover
@@ -54,10 +56,9 @@ body
 
 .buttonContainer
 {
-/*    display: flex;
-    justify-content: center;*/
-    width: 100%;
-    position: relative;
-    /*top: 80vh;*/
-    /*background:  blue;*/
+    display: flex;
+    justify-content: space-between;
 }
+
+
+
