@@ -32,17 +32,25 @@ body
 
 [type="button"]
 {
-    background:  orange;
-    border:  3px solid purple;
+    background:   #e68a00;
+    border:  3px solid #9900cc;
     width: 30vw;
-    color: white;
     padding:  15px 10px;
     margin: auto;
-    font-size:  28px;
     font-weight: bold;
     font-family: Ubuntu;
     position: static;
     margin:  0px 15vw;
+    box-shadow: inset 4px -4px 22px  #ffcc80, inset -4px 4px 12px #e6e600, 3px 3px 12px #600080, 0px 0px 35px 6px white;
+    border-radius: 5px;
+}
+
+[type="button"] a
+{
+    font-size:  28px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1.5px black;
 }
 
 .buttonContainer
