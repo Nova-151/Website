@@ -30,11 +30,11 @@ body
     background:   #e68a00;
     border:  3px solid #9900cc;
     width: 30vw;
-    padding:  15px 10px;
+    padding:  25px 30px;
     font-weight: bold;
     font-family: Ubuntu;
     position: static;
-    margin:  0px 15vw;
+    margin:  0px 10vw;
     box-shadow: inset 4px -4px 22px  #ffcc80, inset -4px 4px 12px #e6e600, 3px 3px 12px #600080, 0px 0px 35px 6px white;
     border-radius: 5px;
 
@@ -42,7 +42,7 @@ body
 
 [type="button"] a
 {
-    font-size:  28px;
+    font-size:  30px;
     color: white;
     text-decoration: none;
     text-shadow: 1px 1.5px black;
@@ -56,6 +56,7 @@ body
 
 .buttonContainer
 {
+    outline: 5px solid yellow;
     display: flex;
     justify-content: space-between;
 }
