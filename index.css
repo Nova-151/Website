@@ -18,7 +18,7 @@ body
 
 .logoContainer
 {
-    padding-top:  100px;
+    padding-top:  50px;
     text-align: center;
     margin-bottom: 75px;
 /*    outline:  5px solid yellow;*/
@@ -27,7 +27,8 @@ body
 
 [type="button"]
 {
-    background:   #e68a00;
+    background: rgb(255,199,249);
+background: radial-gradient(circle, rgba(255,199,249,0.8301439606741573) 42%, rgba(230,138,0,0.8610428370786517) 76%);
     border:  3px solid #9900cc;
     width: 30vw;
     padding:  25px 30px;
@@ -37,6 +38,7 @@ body
     margin:  0px 10vw;
     box-shadow: inset 4px -4px 22px  #ffcc80, inset -4px 4px 12px #e6e600, 3px 3px 12px #600080, 0px 0px 35px 6px white;
     border-radius: 5px;
+    opacity: .9;
 
 }
 
@@ -52,6 +54,10 @@ body
 [type="button"]:hover
 {
     cursor: pointer;
+    transform: scale(1.05);
+    transition: .3s;
+    transition-timing-function:  ease-in-out; 
+    box-shadow: inset 4px -4px 22px  #ffcc80, inset -4px 4px 12px #e6e600, 3px 3px 6px black
 }
 
 .buttonContainer
@@ -99,7 +105,7 @@ footer p
     margin: 0px;
     color: white;
     padding-top: 7px;
-    font-size: 110%;
+    font-size: 100%;
 }
 
 
