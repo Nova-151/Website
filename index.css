@@ -14,7 +14,8 @@ body
 
 .nova-logo
 {
-    
+    padding-left: 50px!important;
+    padding-right: 50px!important;
 }
 
 .logoContainer
@@ -22,8 +23,7 @@ body
     text-align: center;
     /*margin-bottom: 75px;*/
     outline:  5px solid yellow;
-    padding-left: 50px!important;
-    padding-right: 50px!important;
+    
 }
 
 [type="button"]
