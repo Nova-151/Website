@@ -15,6 +15,7 @@ body
 .nova-logo
 {
     margin: auto;
+    transform: scale(.8);
 }
 
 .logoContainer
