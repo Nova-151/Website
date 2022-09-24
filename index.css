@@ -9,6 +9,7 @@ body
      -o-background-size: cover;
      background-size: cover;
 /*     overflow-x: hidden;*/
+margin: auto;
 
 }
 
@@ -21,13 +22,13 @@ body
 {
     display: flex;
     justify-content: center;
-    width: 96.4%;
+    width: 100%;
     height: 90vh;
     min-height: 450px;
     margin-bottom: 75px;
     position: absolute;
     padding-left: 1vw;
-    background:  red;
+    background:  yellow;
 }
 
 [type="button"]
@@ -60,8 +61,8 @@ body
 
 .buttonContainer
 {
-    display: flex;
-    justify-content: center;
+/*    display: flex;
+    justify-content: center;*/
     width: 100%;
     position: relative;
     top: 80vh;
