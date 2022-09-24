@@ -2,12 +2,13 @@
 
 body
 {
-   background-color:  blue; 
+   background-color:  yellow; 
    background: url(background3.jpg) no-repeat center center fixed; 
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
      background-size: cover;
+     overflow-x: hidden;
 
 }
 
@@ -20,12 +21,13 @@ body
 {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 96.4%;
     height: 90vh;
     min-height: 450px;
     margin-bottom: 75px;
-    /*background:  red;*/
     position: absolute;
+    padding-left: 1vw;
+    /*background:  red;*/
 }
 
 [type="button"]
@@ -50,4 +52,5 @@ body
     width: 100%;
     position: relative;
     top: 80vh;
+    /*background:  blue;*/
 }
