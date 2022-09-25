@@ -54,16 +54,22 @@ body
 
 .nova-logo-inner
 {
-    filter: drop-shadow(5px 3px black);
+    filter: 
+    drop-shadow(4px 2px red)
+    drop-shadow(4.5px 2px black);
     animation: rotate 20s linear infinite;
     z-index: 999;
 }
 
 .nova-logo-outer
 {
-    filter: drop-shadow(5px 3px black);
-    position: absolute;
+/*    filter: 
+    drop-shadow(4px 2px #e6b800)
+    drop-shadow(4.5px 2px black);*/
+    position: relative;
+    transform: scale(1.3);
     z-index: 1;
+
 }
 
 .nova-logo-bloom
