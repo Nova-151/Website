@@ -47,6 +47,7 @@ body
      -moz-background-size: cover;
      -o-background-size: cover;
      background-size: cover;
+     overflow-x: hidden;
 
 
 }
@@ -55,18 +56,22 @@ body
 {
     filter: drop-shadow(5px 3px black);
     animation: rotate 20s linear infinite;
+    z-index: 999;
 }
 
 .nova-logo-outer
 {
     filter: drop-shadow(5px 3px black);
     position: absolute;
+    z-index: 1;
 }
 
 .nova-logo-bloom
 {
     position: absolute;
     animation: bloom 3s alternate infinite;
+    border-radius: 50px;
+    z-index: -1;
 }
 
 .nova-logo-circle1
@@ -75,6 +80,7 @@ body
     animation: rotateY 3s linear alternate infinite;
     top: 320px;
     left: 250px;
+    z-index: 1;
 }
 
 .nova-logo-circle2
@@ -84,6 +90,7 @@ body
     animation-delay: 1s;
     top: 370px;
     right: 250px;
+    z-index: 1;
 }
 
 .logoContainer
@@ -98,7 +105,7 @@ body
 [type="button"]
 {
     background: rgb(255,199,249);
-background: radial-gradient(circle, rgba(255,199,249,0.5913799157303371) 42%, rgba(230,138,0,0.8610428370786517) 76%);
+    background: radial-gradient(circle, rgba(255,199,249,0.5913799157303371) 42%, rgba(230,138,0,0.8610428370786517) 76%);
     border:  3px solid #9900cc;
     width: 30vw;
     padding:  25px 30px;
@@ -253,12 +260,13 @@ footer p
 
 
 section{
-    position: absolute;
+    position: fixed; /*optionally change to absolute but it wont scroll with the page*/
     top: 0;
-    left: 75px;
-    width: 75%;
+    left: 175px;
+    width: 100%;
     height: 100vh;
     opacity: .4;
+    z-index: -1;
 
 }
 
@@ -381,5 +389,80 @@ span:nth-child(10){
 }
 
 
+.stars {
+ background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+ position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 0;
+}
 
+.twinkling{
+    width:10000px;
+    height: 100%;
+    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+    background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    
+    -moz-animation:move-background 15s linear infinite;
+    -ms-animation:move-background 15s linear infinite;
+    -o-animation:move-background 15s linear infinite;
+    -webkit-animation:move-background 15s linear infinite;
+    animation:move-background 15s linear infinite;
+    
+}
+
+.stars,
+.twinkling{
+  height: 250%;
+  width: 100%;
+  position: absolute;
+  z-index: -4;
+  right: 20px;
+}
+
+
+
+
+@keyframes move-background {
+  from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to { 
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+@-webkit-keyframes move-background {
+  from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to { 
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-moz-keyframes move-background {    
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to { 
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+    @-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to { 
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
 
