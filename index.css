@@ -109,12 +109,12 @@ body
 }
 
 
-/*.nova-logo-circle1
+.nova-logo-circle1
 {
     position: absolute;
     animation: rotateY 3s linear alternate infinite;
     top: 320px;
-    left: 250px;
+    left: 130px;
     z-index: 1;
 }
 
@@ -123,10 +123,10 @@ body
     position: absolute;
     animation: rotateY 3s linear alternate infinite;
     animation-delay: 1s;
-    top: 370px;
-    right: 250px;
+    top: 400px;
+    right: 145px;
     z-index: 1;
-}*/
+}
 
 .logoContainer
 {
