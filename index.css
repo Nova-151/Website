@@ -150,26 +150,6 @@ body
 
 .button
 {
-    /*background: rgb(255,199,249);*/
-    /*background: radial-gradient(circle, rgba(255,199,249,0.5913799157303371) 42%, rgba(230,138,0,0.8610428370786517) 76%);*/
-/*    border:  3px solid #9900cc;
-    width: 30vw;
-    
-    font-weight: bold;
-    font-family: Ubuntu;
-    position: static;
-    margin:  0px 10vw;
-    box-shadow: inset 4px -4px 22px  #ffcc80, inset -4px 4px 12px #e6e600, 3px 3px 12px #600080, 0px 0px 35px 6px white;
-    border-radius: 5px;
-    text-align: center;
-    height: 25px;*/
-
-
-
-/*    margin:  0px 10vw;
-    width: 30vw;
-    padding:  25px 5vw;*/
-
     padding:  25px 5vw;
     text-align: center;
     margin: auto;
@@ -177,7 +157,6 @@ body
     background:  url("lib/nebula background.png") no-repeat center center fixed;
     position: static;
     border-radius: 2px;
-    /*border:  3px solid #651583;*/
 }
 
 .buttonBG
@@ -202,22 +181,16 @@ body
 .button a
 {
     font-size:  28px;
+    font-family: Exodar-Outline;
     color: white;
     text-decoration: none;
     text-shadow: 1px 1.5px black;
     opacity:  1;
+    font-weight: bold;
+    letter-spacing: 1.4px;
 }
 
-@keyframes rotateHue {
-    0%{
-        filter:  hue-rotate(0deg) saturate(30%) brightness(3.0);;
-    }
 
-
-    100%{
-        filter:  hue-rotate(360deg) saturate(100%) brightness(1.7);;
-    }
-}
 
 
 [type="button"]:hover
