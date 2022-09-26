@@ -78,12 +78,22 @@ body
 .nova-logo-bloom
 {
     position: absolute;
-    animation: bloom 3s alternate infinite;
+    animation: bloom 2s alternate infinite;
     border-radius: 50px;
     z-index: -1;
+    transform: scale(1.3);
+
 }
 
-.nova-logo-circle1
+.nova-logo-stars
+{
+    position: absolute;
+    transform: scale(1.3);
+
+}
+
+
+/*.nova-logo-circle1
 {
     position: absolute;
     animation: rotateY 3s linear alternate infinite;
@@ -100,7 +110,7 @@ body
     top: 370px;
     right: 250px;
     z-index: 1;
-}
+}*/
 
 .logoContainer
 {
