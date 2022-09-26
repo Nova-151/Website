@@ -92,6 +92,22 @@ body
 
 }
 
+.nova-logo-twink
+{
+    position: absolute;
+    animation: rotateTwink 14s infinite linear;    
+}
+
+@keyframes rotateTwink {
+  0 {
+    transform: rotate(0) scale(1.27);
+  }
+
+  100% {
+    transform: rotate(359deg) scale(1.27);
+  }
+}
+
 
 /*.nova-logo-circle1
 {
