@@ -631,4 +631,102 @@ footer p
 }*/
 
 
+.wormHolder
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+}
+
+
+
+.outer-circle
+{
+
+    position: relative;
+/*    left: -314px;
+    top: -394px;*/
+
+    width:  80vw;
+    height: 1920px;
+    
+
+    background:  linear-gradient(#b30000,#600080,#000099);
+    border-radius: 5px;
+    /*animation:  rotateHue 1.5s linear infinite;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    max-width: 1080px;
+}
+
+.outer-circle span
+{
+    position: absolute;
+    width:  80vw;
+
+    height: 1920px;
+    background:  linear-gradient(#b30000,#600080,#000099);
+    border-radius: 5px;
+    animation:  rotateHue 2s linear infinite;
+
+    max-width: 1080px;
+}
+
+
+.wormHolder span:nth-child(1)
+{
+    filter:  blur(5px);
+}
+
+.wormHolder span:nth-child(2)
+{
+    filter:  blur(10px);
+}
+
+.wormHolder span:nth-child(3)
+{
+    filter:  blur(25px);
+}
+
+.wormHolder span:nth-child(4)
+{
+    filter:  blur(150px);
+}
+
+.inner-circle
+{
+    width:  99%;
+    height:  99%;
+    position: relative;
+    background:  black;
+    margin: auto;
+    
+    z-index: 9;
+}
+
+.inner-img
+{
+    width:  100%;
+    height: 100%;
+    background: url("gravitechnoFlyer.jpeg") no-repeat center center;
+    background-size: contain;
+}
+
+@keyframes rotateHue {
+    0%{
+        filter:  hue-rotate(0deg) saturate(30%) brightness(3.0);
+
+    }
+
+
+    100%{
+        filter:  hue-rotate(360deg) saturate(100%) brightness(1.7);
+    }
+}
