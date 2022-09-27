@@ -781,6 +781,7 @@ footer p
     background: url("gravitechnoFlyer.jpeg") no-repeat center center;
     background-size: contain;
     filter: drop-shadow(0 0 20px red);
+    z-index: 10;
 }
 
 @keyframes rotateHue {
