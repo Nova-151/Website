@@ -653,7 +653,7 @@ footer p
     top: -394px;*/
 
     width:  80vw;
-    height: 1080px;
+    height: 130vw;
     
 
     background:  linear-gradient(#b30000,#600080,#000099);
@@ -671,7 +671,7 @@ footer p
     position: absolute;
     width:  80vw;
 
-    height: 1080px;
+    height: 130vw;
     background:  linear-gradient(#b30000,#600080,#000099);
     border-radius: 5px;
     animation:  rotateHue 2s linear infinite;
@@ -704,38 +704,11 @@ footer p
 {
     width:  99%;
     height:  99%;
-    position: relative;
-    background: black url("nebula background.png") repeat;
+    position: absolute;
+    background:  red;
     margin: auto;
-    animation:  shadowChange 5s linear infinite;
+    left: 3px;
     z-index: 9;
-}
-
-@keyframes shadowChange {
-    0%{
-        box-shadow: inset -20px -20px 300px #4d001f; /*red*/
-
-    }
-
-    25%{
-        box-shadow: inset -20px -20px 300px #b32d00; /*orange*/
-
-    }
-
-    50%{
-        box-shadow: inset -20px -20px 300px #202060; /*blue*/
-
-    }
-
-
-    75%{
-        box-shadow: inset -20px -20px 300px #660066; /*purple*/
-    }
-
-    100%{
-        box-shadow: inset -20px -20px 300px #4d001f; /*red*/
-
-    }
 }
 
 .inner-img
@@ -743,7 +716,7 @@ footer p
     width:  100%;
     height: 100%;
     background: url("gravitechnoFlyer.jpeg") no-repeat center center;
-    background-size: contain;
+    background-size: 55vh, 5vh, contain;
 }
 
 @keyframes rotateHue {
