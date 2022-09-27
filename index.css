@@ -740,7 +740,8 @@ footer p
     width:  99%;
     height:  99%;
     position: relative;
-    background: black url("nebula background.png") repeat;
+    background: black url("nebula background.png") no-repeat;
+    background-size: cover;
     margin: auto;
     animation:  shadowChange 5s linear infinite;
     z-index: 9;
