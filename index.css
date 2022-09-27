@@ -157,7 +157,40 @@ body
     background:  url("lib/nebula background.png") no-repeat center center fixed;
     position: static;
     border-radius: 2px;
+
+    animation:  shadowChangeButton 3s infinite linear;
+
+
 }
+
+
+@keyframes shadowChangeButton {
+    0%{
+        box-shadow: inset -10px -10px 40px #4d001f; /*red*/
+
+    }
+
+    25%{
+        box-shadow: inset -10px -10px 40px #b32d00; /*orange*/
+
+    }
+
+    50%{
+        box-shadow: inset -10px -10px 40px #202060; /*blue*/
+
+    }
+
+
+    75%{
+        box-shadow: inset -10px -10px 40px #660066; /*purple*/
+    }
+
+    100%{
+        box-shadow: inset -10px -10px 40px #4d001f; /*red*/
+
+    }
+}
+
 
 .buttonBG
 {
@@ -169,6 +202,8 @@ body
     transition: .3s;
     transition-timing-function:  ease-in-out;
     box-shadow: 6px 6px 18px #4d004d,-3px -3px 18px #b35900; 
+
+
 }
 
 .buttonBG:hover
