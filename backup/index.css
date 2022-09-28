@@ -150,6 +150,26 @@ body
 
 .button
 {
+    /*background: rgb(255,199,249);*/
+    /*background: radial-gradient(circle, rgba(255,199,249,0.5913799157303371) 42%, rgba(230,138,0,0.8610428370786517) 76%);*/
+/*    border:  3px solid #9900cc;
+    width: 30vw;
+    
+    font-weight: bold;
+    font-family: Ubuntu;
+    position: static;
+    margin:  0px 10vw;
+    box-shadow: inset 4px -4px 22px  #ffcc80, inset -4px 4px 12px #e6e600, 3px 3px 12px #600080, 0px 0px 35px 6px white;
+    border-radius: 5px;
+    text-align: center;
+    height: 25px;*/
+
+
+
+/*    margin:  0px 10vw;
+    width: 30vw;
+    padding:  25px 5vw;*/
+
     padding:  25px 5vw;
     text-align: center;
     margin: auto;
@@ -157,7 +177,44 @@ body
     background:  url("lib/nebula background.png") no-repeat center center fixed;
     position: static;
     border-radius: 2px;
+<<<<<<< HEAD
+
+    animation:  shadowChangeButton 3s infinite linear;
+
+
+=======
+    /*border:  3px solid #651583;*/
+>>>>>>> parent of 39a2057 (font updated)
 }
+
+
+@keyframes shadowChangeButton {
+    0%{
+        box-shadow: inset -10px -10px 40px #4d001f; /*red*/
+
+    }
+
+    25%{
+        box-shadow: inset -10px -10px 40px #b32d00; /*orange*/
+
+    }
+
+    50%{
+        box-shadow: inset -10px -10px 40px #202060; /*blue*/
+
+    }
+
+
+    75%{
+        box-shadow: inset -10px -10px 40px #660066; /*purple*/
+    }
+
+    100%{
+        box-shadow: inset -10px -10px 40px #4d001f; /*red*/
+
+    }
+}
+
 
 .buttonBG
 {
@@ -169,6 +226,8 @@ body
     transition: .3s;
     transition-timing-function:  ease-in-out;
     box-shadow: 6px 6px 18px #4d004d,-3px -3px 18px #b35900; 
+
+
 }
 
 .buttonBG:hover
@@ -181,16 +240,22 @@ body
 .button a
 {
     font-size:  28px;
-    font-family: Exodar-Outline;
     color: white;
     text-decoration: none;
     text-shadow: 1px 1.5px black;
     opacity:  1;
-    font-weight: bold;
-    letter-spacing: 1.4px;
 }
 
+@keyframes rotateHue {
+    0%{
+        filter:  hue-rotate(0deg) saturate(30%) brightness(3.0);;
+    }
 
+
+    100%{
+        filter:  hue-rotate(360deg) saturate(100%) brightness(1.7);;
+    }
+}
 
 
 [type="button"]:hover
@@ -631,3 +696,132 @@ footer p
 }*/
 
 
+.wormHolder
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+}
+
+
+
+.outer-circle
+{
+
+    position: relative;
+/*    left: -314px;
+    top: -394px;*/
+
+    width:  80vw;
+    height: 1080px;
+    
+
+    background:  linear-gradient(#b30000,#600080,#000099);
+    border-radius: 5px;
+    /*animation:  rotateHue 1.5s linear infinite;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    max-width: 1080px;
+}
+
+.outer-circle span
+{
+    position: absolute;
+    width:  80vw;
+
+    height: 1080px;
+    background:  linear-gradient(#b30000,#600080,#000099);
+    border-radius: 5px;
+    animation:  rotateHue 2s linear infinite;
+
+    max-width: 1080px;
+}
+
+
+.wormHolder span:nth-child(1)
+{
+    filter:  blur(5px);
+}
+
+.wormHolder span:nth-child(2)
+{
+    filter:  blur(10px);
+}
+
+.wormHolder span:nth-child(3)
+{
+    filter:  blur(25px);
+}
+
+.wormHolder span:nth-child(4)
+{
+    filter:  blur(150px);
+}
+
+.inner-circle
+{
+    width:  99%;
+    height:  99%;
+    position: relative;
+    background: black url("nebula background.png") no-repeat;
+    background-size: cover;
+    margin: auto;
+    animation:  shadowChange 5s linear infinite;
+    z-index: 9;
+}
+
+@keyframes shadowChange {
+    0%{
+        box-shadow: inset -20px -20px 300px #4d001f; /*red*/
+
+    }
+
+    25%{
+        box-shadow: inset -20px -20px 300px #b32d00; /*orange*/
+
+    }
+
+    50%{
+        box-shadow: inset -20px -20px 300px #202060; /*blue*/
+
+    }
+
+
+    75%{
+        box-shadow: inset -20px -20px 300px #660066; /*purple*/
+    }
+
+    100%{
+        box-shadow: inset -20px -20px 300px #4d001f; /*red*/
+
+    }
+}
+
+.inner-img
+{
+    width:  100%;
+    height: 100%;
+    background: url("gravitechnoFlyer.jpeg") no-repeat center center;
+    background-size: contain;
+    filter: drop-shadow(0 0 20px red);
+    z-index: 10;
+}
+
+@keyframes rotateHue {
+    0%{
+        filter:  hue-rotate(0deg) saturate(30%) brightness(3.0);
+
+    }
+
+
+    100%{
+        filter:  hue-rotate(360deg) saturate(100%) brightness(1.7);
+    }
+}
