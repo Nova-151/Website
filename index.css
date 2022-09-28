@@ -216,7 +216,7 @@ body
 .button a
 {
     font-size:  28px;
-    font-family: Exodar-Outline, Ubuntu, "Roboto Mono";
+    font-family: "Exodar-Outline", Ubuntu, "Roboto Mono";
     color: white;
     text-decoration: none;
     text-shadow: 1px 1.5px black;
