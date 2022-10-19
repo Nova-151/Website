@@ -36,7 +36,7 @@ body
 {
 	margin: 0 15%;
 	font-size: 100%;
-	/*background-color:  black;	*/
+	background-color:  black;	
 	background: url(images/stars.png) no-repeat center center fixed;
 	background-size: cover;
 	color: #fff;
