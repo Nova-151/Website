@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 
-/*@font-face 
+@font-face 
 {
     font-family: 'Exodar-Outline';
     src: url('Fonts/Exodar-Outline.ttf');
@@ -12,9 +12,9 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}*/
+}
 
-/*@font-face {
+@font-face {
     font-family: 'Nasalization';
     src: url('Fonts/NasalizationRg-Regular.eot');
     src: url('Fonts/NasalizationRg-Regular.eot?#iefix') format('embedded-opentype'),
@@ -25,7 +25,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}*/
+}
 
 
 
@@ -37,7 +37,7 @@ body
 	margin: 0 15%;
 	font-size: 100%;
 	background-color:  black;	
-	background: url(images/stars.png) no-repeat center center fixed;
+	background: url(Images/stars.png) no-repeat center center fixed;
 	background-size: cover;
 	color: #fff;
 	font-family: Ubuntu, Nasalization, sans-serif, monospace;
@@ -62,7 +62,7 @@ video
 {
     width: auto;
     height: auto;
-    background-image: url("images/neb.png");
+    background-image: url("Images/neb.png");
     background-size: cover;
     padding: 30px;
     color: #fff;
@@ -118,7 +118,7 @@ video
 	margin-bottom: 50px;
 	line-height: 1.5;
     border:  12px solid;
-    border-image:  url("images/neb.png") 55 55 55 55 stretch;
+    border-image:  url("Images/neb.png") 55 55 55 55 stretch;
     box-shadow: 2px 2px 6px #30062b;
     padding-top: 1em; 
 
@@ -148,7 +148,7 @@ video
 {
     width:2000px;
     height: 100%;
-    background: transparent url("images/twinkling.png") repeat;
+    background: transparent url("Images/twinkling.png") repeat;
     position: absolute;
     animation:move-background 30s linear infinite;
     z-index: -1;
@@ -214,7 +214,7 @@ video
 .navbar:hover
 {
     width: 15em;
-    background-image: url("images/neb.png");
+    background-image: url("Images/neb.png");
     background-size: cover;
     border: 2px solid white;
     border-left: none;
