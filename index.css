@@ -121,6 +121,7 @@ video
     border-image:  url("Images/neb.png") 55 55 55 55 stretch;
     box-shadow: 2px 2px 6px #30062b;
     padding-top: 1em; 
+    background: ##ffffff21;
 
 }
 
