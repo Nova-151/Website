@@ -62,7 +62,7 @@ video
 {
     width: auto;
     height: auto;
-    background-image: url("Images/neb.png");
+    background-image: url("images/neb.png");
     background-size: cover;
     padding: 30px;
     color: #fff;
@@ -118,7 +118,7 @@ video
 	margin-bottom: 50px;
 	line-height: 1.5;
     border:  12px solid;
-    border-image:  url("Images/neb.png") 55 55 55 55 stretch;
+    border-image:  url("images/neb.png") 55 55 55 55 stretch;
     box-shadow: 2px 2px 6px #30062b;
     padding-top: 1em; 
 
