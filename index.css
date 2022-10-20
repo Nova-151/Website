@@ -14,7 +14,8 @@
     font-display: swap;
 }
 
-@font-face {
+@font-face 
+{
     font-family: 'Nasalization';
     src: url('Fonts/NasalizationRg-Regular.eot');
     src: url('Fonts/NasalizationRg-Regular.eot?#iefix') format('embedded-opentype'),
@@ -42,6 +43,10 @@ body
 	color: #fff;
 	font-family: Ubuntu, Nasalization, sans-serif, monospace;
 	overflow-x: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 
@@ -121,7 +126,7 @@ video
     border-image:  url("Images/neb.png") 55 55 55 55 stretch;
     box-shadow: 2px 2px 6px #30062b;
     padding-top: 1em; 
-    background: ##ffffff21;
+    background: #ffffff21;
 
 }
 
@@ -196,67 +201,9 @@ video
     transition-timing-function:  ease-in-out; 
 }
 
-/*.socialMediaLinks a:link,
-.socialMediaLinks a:visited
-{
-    color: #fff;
-}*/
 
 
-.navbar
-{
-    float: left;
-    width: 10%;
-    position: absolute;
-    left: 0px;
-    height: 22em;
-}
 
-.navbar:hover
-{
-    width: 15em;
-    background-image: url("Images/neb.png");
-    background-size: cover;
-    border: 2px solid white;
-    border-left: none;
-    border-top: none;
-    transition: .5s;
-    transition-timing-function:  ease-in-out; 
-}
-
-.navbar:hover li
-{
-    visibility: visible;
-}
-
-.navList li
-{
-    list-style-type: none;
-    padding: 1em 0;
-    visibility: hidden;
-}
-
-.navbar:hover .navList li a
-{
-    color: #fff;
-    text-shadow:  .1em .1em black;
-}
-
-.navList li a
-{
-    color: transparent;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
-    padding:  1em 1.7em;
-    transition: color 1s, text-shadow 1s;
-    transition-timing-function:  ease-in; 
-}
-
-.navList li:hover
-{
-    background:  radial-gradient(circle, rgba(237,216,253,.2) 40%, rgba(215,184,242,.4) 94%);
-}
 
 
 #hamburger i
@@ -284,10 +231,211 @@ video
 }
 
 
+/*stars span*/
+    .shootingStars{
+        position: fixed; /*optionally change to absolute but it wont scroll with the page*/
+        top: 0;
+        left: 175px;
+        width: 100%;
+        height: 100vh;
+        opacity: .4;
+        z-index: -1;
+
+    }
+
+    .shootingStars span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 4px;
+        height: 4px;
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
+        animation:  animate 3s linear infinite;
+    }
+    .shootingStars span::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 300px;
+        height: 1px;
+        background: linear-gradient(90deg, #fff, transparent);
+    }
+
+    @keyframes animate 
+    {
+        0%
+        {
+            transform: rotate(300deg) translateX(0);
+            opacity: 1;
+        }
+        70% 
+        { 
+            opacity: 1; 
+        }
+        100%
+        {
+            transform: rotate(300deg) translateX(-1500px);
+            opacity: 0;
+        }
+        
+    }
 
 
+    .shootingStars span:nth-child(1){
+        top: 0;
+        right: 0;
+        left:initial;
+        animation-delay:0 ;
+        animation-duration: 1s;
+    }
+
+    .shootingStars span:nth-child(2){
+        top: 0;
+        right: 80px;
+        left:initial;
+        animation-delay:0.2s;
+        animation-duration: 3s;
+    }
+
+   .shootingStars  span:nth-child(3){
+        top: 80px;
+        right: 0px;
+        left:initial;
+        animation-delay:0.4s ;
+        animation-duration: 2s;
+    }
+
+    .shootingStars span:nth-child(4){
+        top: 0;
+        right: 180px;
+        left:initial;
+        animation-delay:0.6s;
+        animation-duration: 1.5s;
+    }
+
+    .shootingStars span:nth-child(5){
+        top: 0;
+        right: 400px;
+        left:initial;
+        animation-delay:0.8s;
+        animation-duration: 2.5s;
+    }
+
+    .shootingStars span:nth-child(6){
+        top: 0;
+        right: 600px;
+        left:initial;
+        animation-delay:1s ;
+        animation-duration: 3s;
+    }
+    .shootingStars span:nth-child(7 ){
+        top: 300px;
+        right: 0px;
+        left:initial;
+        animation-delay:1s ;
+        animation-duration: 1.75s;
+    }
+
+    .shootingStars span:nth-child(8){
+        top: 0px;
+        right: 700px;
+        left:initial;
+        animation-delay:1.4s ;
+        animation-duration: 1.25s;
+    }
+
+    .shootingStars span:nth-child(9){
+        top: 0px;
+        right: 1000px;
+        left:initial;
+        animation-delay:0.75s ;
+        animation-duration: 2.25s;
+    }
+
+    .shootingStars span:nth-child(10){
+        top: 0px;
+        right: 1000px;
+        left:initial;
+        animation-delay:2.75s ;
+        animation-duration: 2.25s;
+    }
+
+/*end stars span*/
+
+.menuItem 
+{
+  display: block;
+  margin: 1rem 2rem;
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+  font-family: nasalization;
+  position: relative;
+  
+}
+
+.menuItem:not(.menu li:first-child)
+{
+    margin-left: 0px;
+}
+
+.menuItem i
+{
+    color: orange;
+    margin-right: 2rem;
+}
+
+.menu li:first-child
+{
+    position: relative;
+    top: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu li:first-child::first-letter
+{
+    color: Orange;
+}
 
 
+.hamburger 
+{
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  left: 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+}
 
+.closeIcon 
+{
+  display: none;
+}
 
+.menu 
+{
+  position: fixed;
+  transform: translateX(-100%);
+  transition: transform 0.2s;
+  top: -1rem;
+  left: 0;
+  z-index: 99;
+  background: url("Images/neb.png");
+  color: white;
+  list-style: none;
+  border: 2px solid #fff;
+  border-left: none;
+  border-top: none;
+}
+
+.showMenu {
+  transform: translateX(0);
+}
 
