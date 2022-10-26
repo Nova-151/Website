@@ -374,13 +374,14 @@ video
   text-decoration: none;
   font-family: nasalization;
   position: relative;
-  text-align: center;
+
   
 }
 
 .menuItem:not(.menu li:first-child)
 {
     margin-left: 0px;
+    padding-left: 40%;
 }
 
 .menuItem i
@@ -395,6 +396,7 @@ video
     top: 0;
     font-weight: bold;
     text-align: center;
+    font-size: 5em;
 }
 
 .menu li:first-child::first-letter
