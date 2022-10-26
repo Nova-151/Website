@@ -100,12 +100,18 @@ input[name=phoneNumber]
     font-size: 1.25em;
 }
 
-input[name=inquiry]
+textarea[name=inquiry]
 {
-    width: 90%;
-    height: 150px;
+    width: 95%;
+    height: 125px;
     border: 2px solid darkorange;
     box-shadow: inset 0 0 12px #E36111, 0px 0px 4px #E36111;
+    color: #C5632A;
+}
+
+textarea:focus
+{
+    outline: none;
 }
 
 .required::after
@@ -115,35 +121,10 @@ input[name=inquiry]
 }
 
 
-/*.logoContainer
-{
-    position: absolute;
-    top: -30px;
-    left: -30px;
-}*/
-
 .sub
 {
     font-size: 1em;
 }
-
-/*header
-{
-    background-image: url("Images/blackHole.png");
-    box-shadow: 0px 4px 16px orange;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 50vh;
-    position: relative;
-    width: 100%;
-    top: 0;
-}
-
-#header h1
-{
-    padding-left: 5em;
-}*/
 
 img
 {
