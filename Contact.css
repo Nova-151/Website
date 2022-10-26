@@ -66,15 +66,15 @@ label:not(.radio)
 .question
 {
     margin: 4em 0;
-    background-color:  #E2DEDE;
+    background-color:  #FEDFCD;
     border:  22px solid;
     border-image:  url("Images/neb3.jpg") 55 55 55 55 stretch;
-    box-shadow: 0px 0px 1em orange, inset 0px 0px .75em purple;
+    box-shadow: 0px 0px 1em #E36111, inset 0px 0px .75em #E36111;
 }
 
 label
 {
-    color: black;
+    color: #C5632A;
     padding: 1em 0;
     font-family: nasalization;
     padding-left: 1em;
@@ -84,11 +84,11 @@ label
 input
 {
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #E36111;
     margin-bottom: 1em;
     margin-left: 2em;
     /*outline: 5px solid blue;*/
-    background:  #E2DEDE;
+    background:  #FEDFCD;
 }
 
 input[name=name],
