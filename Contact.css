@@ -162,7 +162,6 @@ header
 .menuItem:not(.menu li:first-child)
 {
     margin-left: 0px;
-    padding-left: 40%;
 }
 
 .menuItem i
@@ -218,6 +217,7 @@ header
   width: 100%;
   height: 110%;
   padding-left: 0px;
+  text-align: center;
 }
 
 .showMenu 
