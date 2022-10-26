@@ -152,3 +152,83 @@ header
 {
     text-align: center;
 }
+
+
+
+
+.menuItem 
+{
+  display: block;
+  margin: 4rem 0;
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+  font-family: nasalization;
+  position: relative;
+  text-align: center;
+  
+}
+
+.menuItem:not(.menu li:first-child)
+{
+    margin-left: 0px;
+}
+
+.menuItem i
+{
+    color: orange;
+    margin-right: 2rem;
+}
+
+.menu li:first-child
+{
+    position: relative;
+    top: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu li:first-child::first-letter
+{
+    color: Orange;
+}
+
+
+.hamburger 
+{
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  left: 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+}
+
+.closeIcon 
+{
+  display: none;
+}
+
+.menu 
+{
+  position: fixed;
+  transform: translateX(-100%);
+  transition: transform 0.2s;
+  top: -1rem;
+  left: 0;
+  z-index: 99;
+  background: url("Images/neb.png");
+  background-size: cover;
+  color: white;
+  list-style: none;
+  width: 100%;
+  height: 110%;
+  padding-left: 0px;
+}
+
+.showMenu 
+{
+  transform: translateX(0);
+}
