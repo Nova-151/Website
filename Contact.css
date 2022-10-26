@@ -136,12 +136,12 @@ input[name=phoneNumber]
 
 textarea[name=inquiry]
 {
-    width: 98%;
+    width: 99%;
     height: 125px;
     border: 2px solid darkorange;
     box-shadow: inset 0 0 12px #E36111, 0px 0px 4px #E36111;
     color: #C5632A;
-    max-width: 98%;
+    max-width: 99%;
     min-width: 98%;
     min-height: 125px;
 }
