@@ -56,17 +56,18 @@ body
      margin: 0 25%;
      background-color:  black;  
      height: 100%;
+
 }
 
 @media screen and (min-width: 0px)
 {
     #content
     {
-        margin: 0 15%;
+        margin: 0 0;
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 780px)
+@media screen and (min-width: 800px) and (max-width: 1200px)
 {
     #content
     {
@@ -74,11 +75,19 @@ body
     }
 }
 
-@media screen and (min-width: 780px)
+@media screen and (min-width: 1200px) and (max-width: 2400px)
 {
     #content
     {
         margin: 0 25%;
+    }
+}
+
+@media screen and (min-width: 2400px)
+{
+    #content
+    {
+        margin: 0 30%;
     }
 }
 
