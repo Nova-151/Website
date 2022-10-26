@@ -104,8 +104,8 @@ input[name=inquiry]
 {
     width: 90%;
     height: 150px;
-    border: 2px solid #7B3464;
-    box-shadow: inset 0 0 12px purple, 0px 0px 4px purple;
+    border: 2px solid darkorange;
+    box-shadow: inset 0 0 12px #E36111, 0px 0px 4px #E36111;
 }
 
 .required::after
@@ -241,7 +241,15 @@ header
   transform: translateX(0);
 }
 
-input:focus
+input:not(input[type="radio"]):focus
 {
     outline: 2px solid orange;
 }
+
+input:checked
+{
+    border: none;
+}
+
+
+
