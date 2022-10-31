@@ -38,7 +38,8 @@ body
 	font-size: 100%;
 	background-color:  black;	
 	background: url(Images/stars.png) repeat center center fixed;
-	/*background-size: cover;*/
+    background-attachment: fixed;
+	background-size: cover;
 	color: #fff;
 	font-family: Ubuntu, Nasalization, sans-serif, monospace;
 	overflow-x: hidden;
@@ -47,6 +48,7 @@ body
     right: 0;
     bottom: 0;
     color: white;
+    min-height: 100%;
 }
 
 #content
