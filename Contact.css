@@ -192,6 +192,7 @@ input[type="submit"]
     animation:  shadowChangeButton 5s infinite linear;
     transition: .3s;
     transition-timing-function:  ease-in-out;
+    margin-left: 0px;
 }
 
 input[type="submit"]:hover
