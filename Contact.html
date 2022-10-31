@@ -55,68 +55,33 @@
 
 	<div id="content">
 
-		<div id="iframe">
-			<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRVk1A7Sus58HPt21YeV-ag5Wclc1xtLVzPO-noSfMb4qjYQ/viewform?embedded=true" width="640" height="1500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-		</div>
-
-		
 
 		<form class="form" action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSeRVk1A7Sus58HPt21YeV-ag5Wclc1xtLVzPO-noSfMb4qjYQ/formResponse">
 			<div class="question">
 				<label class="required">Name</label>
-				<input name="entry.1231033318" type="text" /><br>
+				<input id="name" name="entry.1231033318" type="text" /><br>
 			</div>
 
 			<div class="question">
 				<label class="required">Email</label>
-				<input name="entry.535229313" type="email" required /><br>
+				<input id="email" name="entry.535229313" type="email" required /><br>
 			</div>
 
 
 			<div class="question">
 				<label>Phone Number (optional)</label>
-				<input name="entry.1191892110" type="tel" /><br>
+				<input id="phone" name="entry.1191892110" type="tel" /><br>
 			</div>
-
-			<!-- <div class="question">
-				<label class="required">Inquiry Category</label>
-
-				<input type="radio" id="partnershipOp" name="inquiryCat" value="partnership"> 
-				<label for="partnershipOp" class="radio sub">Partnership opportunity</label><br>
-
-				<input type="radio" id="suggestionOp" name="inquiryCat" value="suggestion">
-				<label for="suggestionOp" class="radio sub">Suggestion or idea</label><br>
-
-				<input type="radio" id="issueOp" name="inquiryCat" value="issue">
-				<label for="issueOp" class="radio sub">Issue</label><br>
-
-				<input type="radio" id="questionOp" name="inquiryCat" value="question">
-				<label for="questionOp" class="radio sub">Question</label><br>
-
-				<input type="radio" id="otherOp" name="inquiryCat" value="other">
-				<label for="otherOp" class="radio sub">Other</label><br>
-			</div> -->
-
 
 			<div class="question">
 				<label class="required">Inquiry</label>
-				<textarea name="entry.205452297" type="textarea" required/></textarea><br>
+				<textarea id="inquiry" name="entry.205452297" type="textarea" required/></textarea><br>
 			</div>
 
 
-<!-- 			<div class="question">
-				<label>Do you want to join our mailing list?</label>
-
-					<input type="radio" id="mailYes" name="fav_language" value="Yes">
-					<label for="mailYes" class="radio sub">Yes</label><br>
-
-					<input type="radio" id="mailNo" name="fav_language" value="No">
-					<label for="mailNo"class="radio sub">No</label><br>
-
-			</div> -->
-
-
-			<input type="submit" value="Send" />
+			<div id="sendButton">
+				<input type="submit" value="Send" />
+			</div>
 
     	</form>
 

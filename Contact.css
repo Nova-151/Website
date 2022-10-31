@@ -93,12 +93,6 @@ body
     }
 }
 
-
-label:not(.radio)
-{
-    display: block;
-}
-
 .question
 {
     margin: 4em 0;
@@ -115,6 +109,7 @@ label
     font-family: nasalization;
     padding-left: 1em;
     font-size: 1.5em;
+    display: block;
 }
 
 input
@@ -127,18 +122,18 @@ input
     background:  #FEDFCD;
 }
 
-input[name=name],
-input[name=email],
-input[name=phoneNumber]
+input#name,
+input#email,
+input#phone
 {
     width: 80%;
     height: 40px;
     font-size: 1.25em;
 }
 
-textarea[name=inquiry]
+textarea#inquiry
 {
-    width: 99%;
+    width: 95%;
     height: 125px;
     border: 2px solid darkorange;
     box-shadow: inset 0 0 12px #E36111, 0px 0px 4px #E36111;
@@ -180,6 +175,53 @@ header
 {
     text-align: center;
 }
+
+
+input[type="submit"]
+{
+    background-image: url("Images/nebOrange.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60%;
+    font-size: 2.25em;
+    padding: .75em 0;
+    font-family: nasalization;
+    color: #fff;
+    border: 2px solid #E36111;
+    animation:  shadowChangeButton 5s infinite linear;
+    transition: .3s;
+    transition-timing-function:  ease-in-out;
+}
+
+input[type="submit"]:hover
+{
+    transform: scale(1.02);
+}
+
+@keyframes shadowChangeButton 
+{
+    0%{box-shadow: inset -10px -10px 40px #4d001f,0px 0px 12px #E36111; /*red*/}
+
+    25%{box-shadow: inset -10px -10px 40px #b32d00,0px 0px 12px #E36111; /*orange*/}
+
+    50%{box-shadow: inset -10px -10px 40px #202060,0px 0px 12px #E36111; /*blue*/}
+
+    75%{box-shadow: inset -10px -10px 40px #660066,0px 0px 12px #E36111; /*purple*/}
+
+    100%{box-shadow: inset -10px -10px 40px #4d001f,0px 0px 12px #E36111; /*red*/}
+}
+
+
+#sendButton
+{
+    text-align: center;
+}
+
+
+
+
+
 
 
 
@@ -263,15 +305,7 @@ header
   transform: translateX(0);
 }
 
-input:not(input[type="radio"]):focus
-{
-    outline: 2px solid orange;
-}
 
-input:checked
-{
-    border: none;
-}
 
 
 
