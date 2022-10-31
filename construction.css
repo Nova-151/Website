@@ -123,8 +123,9 @@ body{
   left : 42px;
   height:64px;
   width:64px;
-  animation: rotate 6s linear infinite;
+  animation: rotateBack 6s linear infinite;
   margin-left: 12%;
+  
 }
 
 #image3{
@@ -143,8 +144,9 @@ body{
   right : 42px;
   height:64x;
   width:64px;
-  animation: rotateBack 6s linear infinite;
+  animation: rotate 6s linear infinite;
   margin-right: 12%;
+
 }
 
 
