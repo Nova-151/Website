@@ -69,11 +69,18 @@ img
 }
 
 
-
+.buttons
+{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    margin: auto;
+}
 
 .buttons a
 {
-    width: auto;
+    width: 38%;
     height: auto;
     background-image: url("Images/neb.png");
     background-size: cover;
@@ -82,7 +89,6 @@ img
     font-size: 1.1em;
     text-decoration: none;
     text-align: center;
-    margin: 0;
     border: 2px solid #B2B2B2;
     font-weight: bold;
     letter-spacing: 1.5px;
@@ -93,6 +99,39 @@ img
     animation:  shadowChangeButton 5s infinite linear;
     transition: .3s;
     transition-timing-function:  ease-in-out;
+    margin:1em .5em;
+}
+
+.buttons a:first-child{
+    margin-left:0;
+}
+
+.buttons a:last-child{
+    margin-right:0;
+}
+
+
+
+@media screen and (max-width:1100px){
+    .buttons a{
+        width:85%;
+    }
+    
+    .buttons a:last-child{
+        margin-bottom:2em;
+    }
+
+    .buttons{
+        justify-content: center;
+    }
+
+    .buttons a:first-child{
+        margin-left:.5em;
+    }
+    
+    .buttons a:last-child{
+        margin-right:.5em;
+    }
 }
 
 .buttons a:first-child
@@ -116,14 +155,6 @@ img
 .buttons a:hover
 {
 	transform: scale(1.02);
-}
-
-.buttons
-{
-	position: static;
-	margin-bottom: 50px;
-	display: flex;
-	justify-content: space-between;
 }
 
 .missionStatement
@@ -466,7 +497,7 @@ img
 #flyer{
     margin-bottom: 50px;
     border-radius:8px;
-    box-shadow: 0 0 1.5em #fff;
+    box-shadow: 0 0 1.5em #57013e;
 }
 
 #flyerContainer{
